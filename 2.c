@@ -2,8 +2,8 @@
 
 int main()
 {
-    char *a = "qwer2331";
-    char *b = "qwerabcd";
+    char *a = "qwere2331";
+    char *b = "qweravbcd";
     char c[10], d[10];
     printf("%s\n%s\n", a, b);
     printf("identical >> %d\n", compare(a, b));
