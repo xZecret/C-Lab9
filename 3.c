@@ -1,5 +1,14 @@
 #include <stdio.h>
 
+int main()
+{
+    char *s = "12345.6789";
+    char c[12];
+    printf("целая часть : %d\n", num(s));
+    reverse(s, c, len(s));
+    printf("перевернутая : %s\n", c);
+}
+
 int num(char *s)
 {
     char *c = s;
@@ -27,13 +36,4 @@ void reverse(char *s, char *c, int size)
     for (int i = 0; i < size; i++)
         *(c++) = *(s--);
     *c = 0;
-}
-
-int main()
-{
-    char *s = "12345.6789";
-    char c[12];
-    printf("int part contain >> %d\n", num(s));
-    reverse(s, c, len(s));
-    printf("reversed >> %s\n", c);
 }
