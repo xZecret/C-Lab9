@@ -2,15 +2,15 @@
 
 int main()
 {
-    char *a = "qwere2331";
-    char *b = "qweravbcd";
+    char *a = "qwer2331";
+    char *b = "qwervbcd";
     char c[10], d[10];
-    printf("%s\n%s\n", a, b);
-    printf("кол-во совпадений >> %d\n", compare(a, b));
-    printf("кол-во оставшихся символов:\na >> %d\nb >> %d\n\n", len(a) - compare(a, b), len(b) - compare(a, b));
+    printf("a = %s\nb = %s\n", a, b);
+    printf("кол-во совпадений : %d\n", compare(a, b));
+    printf("кол-во оставшихся символов:\na = %d\nb = %d\n\n", len(a) - compare(a, b), len(b) - compare(a, b));
     deltacopy(a, b, c);//Подсчет количество символов, остающихся после последнего совпадения в каждой из строк
     mixcopy(a, b, d);
-    printf("delta >> %s\nmix >> %s\n", c, d);
+    printf("delta : %s\nmix : %s\n", c, d);
 }
 
 int compare(char *a, char *b)
