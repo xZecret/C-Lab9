@@ -2,8 +2,9 @@
 
 int main()
 {
-    char *s = "12345.6789";
+    char *s = "432234.1242";
     char c[12];
+    printf("s=  %s\n", s);
     printf("целая часть : %d\n", num(s));
     reverse(s, c, len(s));
     printf("перевернутая : %s\n", c);
