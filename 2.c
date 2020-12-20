@@ -6,8 +6,8 @@ int main()
     char *b = "qweravbcd";
     char c[10], d[10];
     printf("%s\n%s\n", a, b);
-    printf("identical >> %d\n", compare(a, b));
-    printf("remaining after identical:\na >> %d\nb >> %d\n\n", len(a) - compare(a, b), len(b) - compare(a, b));
+    printf("кол-во совпадений >> %d\n", compare(a, b));
+    printf("кол-во оставшихся символов:\na >> %d\nb >> %d\n\n", len(a) - compare(a, b), len(b) - compare(a, b));
     deltacopy(a, b, c);//Подсчет количество символов, остающихся после последнего совпадения в каждой из строк
     mixcopy(a, b, d);
     printf("delta >> %s\nmix >> %s\n", c, d);
